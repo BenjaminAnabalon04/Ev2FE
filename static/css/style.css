@@ -1,0 +1,60 @@
+body {
+    background-color: #141414;
+    color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar-brand {
+    color: #E50914 !important;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-link:hover {
+    color: #E50914 !important;
+}
+
+.dropdown-menu {
+    background-color: #1f1f1f;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: #E50914;
+    color: white;
+}
+
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200') center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Botón */
+.btn-cine {
+    display: inline-block;
+    background-color: #E50914;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-cine:hover {
+    background-color: #b20710;
+    color: white;
+}
