@@ -95,4 +95,53 @@ body {
     color: white;
     transform: scale(1.05);
 }
+/* ---------- Hero de categoría (estilo Product de Bootstrap) ---------- */
+.hero-categoria {
+    padding: 60px 20px;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #1f1f1f, #0d0d0d);
+    border-radius: 14px;
+    border-bottom: 3px solid #E50914;
+}
 
+.hero-categoria h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-categoria p {
+    max-width: 600px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* ---------- Tarjetas de películas ---------- */
+.card-pelicula {
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card-pelicula:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(229, 9, 20, 0.35);
+}
+
+.card-pelicula .poster {
+    height: 340px;
+    object-fit: cover;
+}
+
+.card-pelicula .card-title {
+    color: #fff;
+    font-weight: 700;
+}
+
+.card-pelicula .anio {
+    color: #E50914;
+    font-weight: bold;
+    margin: 0;
+}

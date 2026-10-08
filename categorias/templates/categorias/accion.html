@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="hero-categoria text-center">
+    <h1 class="display-5 fw-bold">Películas de Acción</h1>
+    <p class="lead mx-auto">Persecuciones, explosiones y adrenalina pura. Elige tu próxima película.</p>
+    <a href="{% url 'categorias:comedia' %}" class="btn-cine">Ver Comedia →</a>
+</section>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-4 mt-2">
+    {% for p in peliculas %}
+    <div class="col">
+        <div class="card card-pelicula h-100">
+            <img src="{% static p.imagen %}" class="card-img-top poster" alt="{{ p.nombre }}">
+            <div class="card-body text-center">
+                <h5 class="card-title">{{ p.nombre }}</h5>
+                <p class="card-text anio">{{ p.anio }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -16,7 +16,7 @@
     <div class="carousel-inner">
         {% for c in categorias %}
         <div class="carousel-item {% if forloop.first %}active{% endif %}">
-           
+           <a href="{% url c.url %}">
             <img src="{% static c.imagen %}" class="d-block w-100 carrusel-img" alt="{{ c.nombre }}">
             <div class="carousel-caption">
                 <h2>{{ c.nombre }}</h2>

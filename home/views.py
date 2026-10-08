@@ -6,13 +6,13 @@ def inicio(request):
             "nombre": "Acción",
             "descripcion": "Persecuciones, explosiones y adrenalina pura.",
             "imagen": "images/accion.jpeg",
-            "url": "accion",
+            "url": "categorias:accion",
         },
         {
             "nombre": "Comedia",
             "descripcion": "Las mejores películas para reír sin parar.",
             "imagen": "images/comedia.jpg",
-            "url": "comedia",
+            "url": "categorias:comedia",
         },
     ]
     return render(request, 'home/inicio.html', {"categorias": categorias})
